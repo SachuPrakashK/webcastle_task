@@ -1,0 +1,115 @@
+$font-family: "Poppins", sans-serif;
+
+.top-exam-page {
+  background-color: #fff;
+}
+.notification-section {
+  background-color: #ffffff;
+  margin-top: 80px;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.notification-section ul li {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.notification-section ul li .date {
+  width: 65px;
+  margin-right: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-right: 2px solid #707070;
+  padding-right: 10px;
+}
+.notification-section ul li .date h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #707070;
+  line-height: 1;
+  font-family: $font-family;
+}
+.notification-section ul li .date h2 {
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: 600;
+  color: #707070;
+  line-height: 1;
+  font-family: $font-family;
+}
+.notification-section ul li .detail {
+  width: calc(100% - 115px);
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 20px #00000021;
+  box-shadow: 0 3px 20px #00000021;
+  padding: 25px;
+}
+.notification-section ul li .detail p {
+  margin: 0;
+  font-size: 16px;
+  color: #212529;
+}
+.top-exam-section ul li .date-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+.top-exam-section ul li .detail .date-download p {
+  font-size: 14px;
+  margin-right: 80px;
+  font-family: $font-family;
+  color: #212529;
+}
+.notification-section ul li .detail p {
+  margin: 0;
+  font-family: $font-family;
+}
+.top-exam-section ul li .detail .date-download p img {
+  margin-right: 10px;
+}
+.top-exam-section ul li .detail .date-download a {
+  font-size: 14px;
+  margin-right: 80px;
+  color: #000;
+  font-family: $font-family;
+}
+.top-exam-section ul li .detail .date-download a img {
+  margin-right: 10px;
+}
+@media (max-width: 767.98px) {
+  .pageHeading h1 {
+    font-size: 25px;
+  }
+  .notification-section ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .notification-section ul li .date {
+    margin-bottom: 15px;
+  }
+  .notification-section ul li .detail {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .top-exam-section ul li .date-download {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .top-exam-section ul li .date-download p {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+}

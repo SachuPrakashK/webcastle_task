@@ -1,0 +1,277 @@
+$font-family: "Poppins", sans-serif;
+
+.find-jobs-page {
+  background-color: #fff;
+}
+.privacy-policy-section {
+  margin-top: 80px;
+  @media (max-width: 991.98px) {
+    margin-top: 45px;
+  }
+}
+.privacy-policy-section {
+  .main-heading {
+    font-size: 36px;
+    color: #212529;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: $font-family;
+    @media (max-width: 991.98px) {
+      font-size: 30px;
+    }
+  }
+}
+.privacy-policy-section p {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: $font-family;
+}
+
+//Appointment section
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+.appointment-section .select-below .custom-control-label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  left: -2.5rem;
+  top: 0.8px;
+}
+.custom-control-input:checked ~ .custom-control-label:before {
+  color: #fff;
+  border-color: #30ca54;
+  background-color: #fff;
+}
+.custom-control-label:before {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  background-image: url(../../../assets/images/green-tik.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.appointment-section .select-below .custom-control-label:after {
+  width: 14px;
+  height: 14px;
+  top: 0.25rem;
+  left: -2.3rem;
+}
+.custom-control-label:after {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50% / 50% 50%;
+}
+.appointment-section .standard .custom-control {
+  padding-left: 2.5rem;
+}
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+}
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+.appointment-section .standard .custom-control-label {
+  font-size: 19px;
+  font-weight: 500;
+  color: #000;
+  font-family: $font-family;
+}
+.appointment-section .standard .custom-control-label:before {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #30ca54;
+  border-radius: 5px;
+  left: -2.5rem;
+  top: 0.15rem;
+}
+.appointment-section .standard .custom-control-label span {
+  color: #0cb100;
+}
+.appointment-section .main-btn {
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+}
+.main-btn {
+  border-radius: 6px;
+  background-color: #30ca54;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  height: 46px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: $font-family;
+  &:hover {
+    background-color: #7fc306;
+  }
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  background-image: url(../../../assets/images/green-tik.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.appointment-section .standard .custom-control-label:after {
+  width: 20px;
+  height: 20px;
+  top: 0.3rem;
+  left: -2.3rem;
+}
+
+//Form section
+
+.appointment-section {
+  background-color: #f9fafc;
+  padding-top: 40px;
+  border-radius: 20px;
+  padding-bottom: 60px;
+  h2 {
+    font-size: 31px;
+    color: #212529;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: $font-family;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 50px;
+    max-width: 543px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .green {
+      display: none;
+    }
+    .form-control {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #b2b2b2;
+      height: 40px;
+      resize: none;
+      padding-left: 30px;
+      transition: 0.3s;
+      font-size: 16px;
+      font-weight: 400;
+      background-color: transparent;
+      &::placeholder {
+        color: #b2b2b2;
+        transition: 0.3s;
+      }
+      &:focus {
+        border-bottom: 1px solid #80df96;
+        &::placeholder {
+          color: #80df96;
+        }
+        ~ .green {
+          display: inline;
+        }
+        ~ .black {
+          display: none;
+        }
+      }
+    }
+  }
+  .select-below {
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+      font-family: $font-family;
+      color: #212529;
+    }
+    .custom-control-label:before {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      left: -2.5rem;
+      top: 0.8px;
+    }
+    .custom-control-label:after {
+      width: 14px;
+      height: 14px;
+      top: 0.25rem;
+      left: -2.3rem;
+    }
+    .custom-checkbox {
+      margin-bottom: 35px;
+      padding-left: 2.5rem;
+      cursor: pointer;
+    }
+    .custom-control-input {
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 3px;
+      cursor: pointer;
+    }
+  }
+  .standard {
+    .custom-control {
+      padding-left: 2.5rem;
+    }
+    .custom-control-label {
+      font-size: 19px;
+      font-weight: 500;
+      color: #000;
+      span {
+        color: #0cb100;
+      }
+    }
+    .custom-control-label:before {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #30ca54;
+      border-radius: 5px;
+      left: -2.5rem;
+      top: 0.15rem;
+    }
+    .custom-control-label:after {
+      width: 20px;
+      height: 20px;
+      top: 0.3rem;
+      left: -2.3rem;
+    }
+  }
+  .main-btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .privacy-policy-section .main-heading {
+    font-size: 30px;
+  }
+}

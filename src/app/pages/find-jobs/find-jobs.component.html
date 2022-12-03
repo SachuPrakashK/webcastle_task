@@ -1,0 +1,96 @@
+<div class="find-jobs-page">
+    <app-header-two></app-header-two>
+
+    <div class="container">
+        <div class="find-job">
+            <input type="text" placeholder="Search job for part-time">
+            <button class="main-btn">Find Job</button>
+        </div>
+    </div>
+    <section class="latest-job-list">
+        <div class="container">
+            <div class="job-list">
+                <h1 class="main-heading">Latest Jobs</h1>
+                <div class="filter-head">
+                    <div class="filter">
+                        <img class="filter-img" src="assets/images/filter.png" alt="" (click)="onClickActive()">
+                        <ul [hidden]="active">
+                            <li>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Full-time</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2">part-time</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Remote</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="filter-table-wrapper">
+                    <table class="filter-table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Post</th>
+                                <th>By</th>
+                                <th>Place</th>
+                                <th>Position</th>
+                                <th>Type</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let jobs of jobsArray">
+                                <td>
+                                    <div class="company">
+                                        <div class="icon">
+                                            <img [src]="jobs.company_logo" alt="">
+                                        </div>
+                                        <span>{{jobs.company | titlecase}}</span>
+                                    </div>
+                                </td>
+                                <td>{{jobs.date_of_post}}</td>
+                                <td>{{jobs.deadline | date: 'longDate'}}</td>
+                                <td>{{jobs.place | titlecase}}</td>
+                                <td>{{jobs.position | titlecase}}</td>
+                                <td>{{jobs.type_of_job | titlecase}}</td>
+                                <td>
+                                    <button class="apply">Apply</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination-wrapper">
+                <ul class="pagination ">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">
+                            1
+                            <span class="sr-only">(current)</span>
+                        </span>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+</div>

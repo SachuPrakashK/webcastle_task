@@ -1,0 +1,221 @@
+:root {
+  --form-control-color: rebeccapurple;
+}
+$primary-color: #5e81f4; // Change color here. C'mon, try it!
+$text-color: mix(#1c1d21, $primary-color, 64%);
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: 0;
+}
+.col-lg-7,
+.col-lg-5,
+.col-md-8,
+.col-md-4 {
+  padding: 0;
+  background: radial-gradient(
+    98.58% 98.58% at 57.43% 48.15%,
+    #5e81f4 0%,
+    #1b51e5 100%
+  );
+}
+.part-one {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.side-one {
+  width: 100%;
+  max-width: 460px;
+}
+.side-one h2 {
+  color: #1c1d21;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  font-family: "Lato", sans-serif;
+}
+.side-one p {
+  color: #8181a5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+}
+.part-two {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    98.58% 98.58% at 57.43% 48.15%,
+    #5e81f4 0%,
+    #1b51e5 100%
+  );
+}
+.form-div {
+  margin-top: 80px;
+}
+.form-div label {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8181a5;
+}
+input.form-control {
+  border: none;
+  border-bottom: 1px solid #ececf2;
+  padding: 0.45rem 2.2rem 0.45rem 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1c1d21;
+}
+.form-group {
+  position: relative;
+}
+span.fa {
+  position: absolute;
+  top: 75%;
+  right: 15px;
+  transform: translateY(-50%);
+  margin-left: 5px;
+}
+
+.query {
+  margin: 30px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.query label.remember {
+  color: #1c1d21;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+label {
+  display: flex;
+  color: #1c1d21;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+  /* Accessible outline */
+  /* Remove comment to use */
+  /*
+		&:focus-within {
+				outline: .125em solid $primary-color;
+		}
+	*/
+  input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    &:checked + span {
+      //   background-color: mix(#fff, $primary-color, 84%);
+      &:before {
+        box-shadow: inset 0 0 0 0.4375em $primary-color;
+      }
+    }
+  }
+  span {
+    display: flex;
+    align-items: center;
+    padding: 0em 0.75em 0.375em 0.375em;
+    border-radius: 99em; // or something higher...
+    transition: 0.25s ease;
+    // &:hover {
+    //   background-color: mix(#fff, $primary-color, 84%);
+    // }
+    &:before {
+      display: flex;
+      flex-shrink: 0;
+      content: "";
+      background-color: #fff;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      margin-right: 0.375em;
+      transition: 0.25s ease;
+      box-shadow: inset 0 0 0 0.125em $primary-color;
+    }
+  }
+}
+.query p.trouble {
+  color: #5e81f4;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+.query p.trouble:hover  {
+  text-decoration: underline;
+}
+.btn-primary {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15.8667px;
+  line-height: 19px;
+  font-family: "Lato", sans-serif;
+}
+footer {
+  margin-top: auto;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.footer {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15.8667px;
+  line-height: 24px;
+  color: #8181a5;
+  font-family: "Lato", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .col-md-7,
+  .col-md-5 {
+    padding: 0;
+    background: #fff
+  }
+  .part-two {
+    display: none;
+  }
+  .part-one {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .part-one .side-one {
+    padding: 25px;
+  }
+  .side-one h2 {
+    color: #1c1d21;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    font-family: "Lato", sans-serif;
+  }
+  .part-two {
+    display: none;
+  }
+}

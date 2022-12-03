@@ -1,0 +1,81 @@
+<div class="login-page">
+    <div class="row">
+        <div class="col-lg-7 col-md-8">
+            <div class="part-one">
+                <div class="side-one">
+                    <h2>Welcome to Aeth Analytica. <br> Sign In to see latest updates.</h2>
+                    <p>Enter your details to proceed further</p>
+
+                    <div class="form-div">
+                        <form [formGroup]="loginForm">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Start Typing..."
+                                    formControlName="strEmail"
+                                    [ngClass]="{ 'is-valid': submitted && f.strEmail.errors}">
+                                <span class="fa fa-envelope-open-o form-control-feedback"></span>
+                                <div *ngIf="submitted && f.strEmail.errors" class="invalid-feedback">
+                                    <div *ngIf="f.strEmail.errors.required">Email is required</div>
+                                    <div *ngIf="f.strEmail.errors.email">
+                                        Email must be a valid email address
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Start Typing..."
+                                    formControlName="strPassword"
+                                    [ngClass]="{ 'is-valid': submitted && f.strPassword.errors}">
+                                <span class="fa fa-lock form-control-feedback"></span>
+                                <div *ngIf="submitted && f.strPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.strPassword.errors.required">
+                                        Password is required
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="query">
+                        <label>
+                            <input type="radio" name="radio" />
+                            <span>Remember me</span>
+                        </label>
+                        <!-- <div class="d-flex">
+                            <input type="radio">
+                            <label class="ml-1 remember">
+                                Remember me
+                            </label>
+                        </div> -->
+                        <!-- <label class="form-control">
+                            <input type="radio" name="radio" />
+                            Remember me
+                        </label> -->
+
+                        <p class="trouble">
+                            Trouble login?
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary">Sign In</button>
+
+
+                </div>
+                <footer>
+                    <div class="footer">
+                        <p class="">Made in <span style="color: #fd6d70;"><i class="fa fa-heart"></i></span> aeth Analytica
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-4">
+            <div class="part-two">
+                <div class="side-two">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

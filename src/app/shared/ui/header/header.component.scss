@@ -1,0 +1,220 @@
+$font-family: "Poppins", sans-serif;
+
+//Header
+
+.navbar-section {
+  .navbar {
+    .navbar-brand {
+      margin-right: 60px;
+    }
+
+    .navbar-toggler {
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+
+      .navbar-toggler-icon {
+        background-image: none;
+        display: block;
+        height: 2px;
+        background-color: #30ca54;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        width: 25px;
+      }
+    }
+
+    .navbar-collapse {
+      @media (max-width: 991.98px) {
+        position: absolute;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 10px 18px 0px #0000001f;
+        z-index: 1051;
+      }
+
+      .navbar-nav {
+        .nav-item {
+          margin-right: 20px;
+
+          @media (max-width: 1199.98px) {
+            margin-right: 0;
+          }
+
+          .nav-link {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+
+            @media (max-width: 991.98px) {
+              color: #000;
+            }
+
+            &:hover {
+              color: #30ca54;
+            }
+          }
+        }
+      }
+    }
+
+    .my-acc {
+      cursor: pointer;
+      position: relative;
+
+      .wrapper {
+        img {
+          margin-right: 10px;
+        }
+
+        span {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          transition: 0.3s;
+
+          @media (max-width: 991.98px) {
+            color: #000;
+          }
+
+          &:hover {
+            color: #30ca54;
+          }
+        }
+      }
+
+      .acc-menu {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: #fff;
+        width: 151px;
+        border-radius: 2px;
+
+        ul {
+          position: relative;
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style-type: none;
+
+          &:after {
+            position: absolute;
+            content: "";
+            top: -8px;
+            right: 5px;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 10px solid rgb(255, 255, 255);
+          }
+
+          li {
+            border-bottom: 1px solid #e4e4e4;
+            padding: 5px;
+
+            &:hover {
+              a {
+                .green {
+                  display: inline;
+                }
+
+                .grey {
+                  display: none;
+                }
+
+                span {
+                  color: #0cb100;
+                }
+              }
+            }
+
+            a {
+              img {
+                margin-right: 10px;
+              }
+
+              span {
+                color: #969696;
+                font-size: 14px;
+                font-weight: 400;
+              }
+
+              .green {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Header
+
+.inner-banner {
+  margin-top: -75px;
+}
+.inner-banner img {
+  width: 100%;
+}
+.pageHeading {
+  margin-top: -105px;
+}
+.pageHeading h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: $font-family;
+}
+.pageHeading .breadcrumb {
+  padding-left: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+.pageHeading .breadcrumb .breadcrumb-item {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.pageHeading .breadcrumb .breadcrumb-item a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $font-family;
+}
+.pageHeading .breadcrumb .breadcrumb-item.active {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $font-family;
+}
+.pageHeading .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+  content: "|";
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .inner-banner {
+    height: 250px;
+  }
+  .inner-banner img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .pageHeading {
+    margin-top: -80px;
+  }
+  .pageHeading h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,98 @@
+<div class="find-jobs-page">
+    <app-header-three></app-header-three>
+
+    <section class="privacy-policy-section">
+        <div class="container">
+            <h1 class="main-heading">Request Appointment</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum.
+            </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="appointment-section">
+        <div class="container">
+            <h2>Appointment</h2>
+            <form [formGroup]="appointmentForm">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter the Name" formControlName="name">
+                            <img class="black" src="assets/images/user-2.png" alt="">
+                            <img class="green" src="assets/images/user.png" alt="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone Number"
+                                formControlName="mobileNumber">
+                            <img class="black" src="assets/images/phone-1.png" alt="">
+                            <img class="green" src="assets/images/phone-1-green.png" alt="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" formControlName="email">
+                            <img class="black" src="assets/images/mail-1.png" alt="">
+                            <img class="green" src="assets/images/mail-1-green.png" alt="">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Messages Here"
+                                formControlName="message"></textarea>
+                            <img class="black" src="assets/images/mail-2.png" alt="">
+                            <img class="green" src="assets/images/mail-2-green.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="select-below">
+                            <h3>Select the below options that you need</h3>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" formControlName="NRIQuota"
+                                    id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">NRI Quota</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" formControlName="Scholarship"
+                                    id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Scholarship</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"
+                                    formControlName="InstituteRegistration" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">Institute Registration</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"
+                                    formControlName="InstituteRegistrationSecond" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Institute Registration</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="standard">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">Lorem Ipsum has been the industry's
+                                <span>standard dummy text</span> ever since the 1500s, when an unknown printer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-right">
+                    <button class="main-btn" (click)="addAppointment()">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+</div>

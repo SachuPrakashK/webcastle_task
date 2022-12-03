@@ -1,0 +1,30 @@
+<div class="top-exam-page">
+    <app-header></app-header>
+
+    <div class="notification-section top-exam-section">
+        <div class="container">
+            <ul> 
+                <li *ngFor="let exam of examsArray">
+                    <div class="date">
+                        <h3 class="text-center">{{exam.date_of_post | date: 'LLL'}}</h3>
+                        <h2 class="text-center">{{exam.date_of_post | date: 'dd'}}</h2>
+                    </div>
+                    <div class="detail">
+                        <h4>{{exam.exam_name | uppercase}}</h4>
+                        <p>{{exam.description}}</p>
+                        <div class="date-download">
+                            <p><img src="assets/images/calendar.png" alt=""><span>{{exam.exam_date | date: 'dd'}} {{exam.exam_date | date: 'LLLL'}} {{exam.exam_date | date: 'YYYY'}}</span></p>
+                            <a href="#" download="{{exam.article}}">
+                                <img src="assets/images/download-1.png" alt="">
+                                <span>Download Files</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>

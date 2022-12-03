@@ -1,0 +1,106 @@
+<section class="navbar-section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="myzeed"></a>
+            <div class="my-acc mob-my-acc ml-auto mr-3 d-lg-none  form-inline">
+                <div class="wrapper" (click)="onClickActive()">
+                    <img src="assets/images/user.png" alt="">
+                </div>
+                <div class="acc-menu" [hidden]="active">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img class="grey" src="assets/images/user-1.png" alt="">
+                                <img class="green" src="assets/images/user.png" alt="">
+                                <span>My Profile</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="grey" src="assets/images/not.png" alt="">
+                                <img class="green" src="assets/images/not-grn.png" alt="">
+                                <span>Notification</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="grey" src="assets/images/logout.png" alt="">
+                                <img class="green" src="assets/images/logout-grn.png" alt="">
+                                <span>Logout</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img src="assets/images/home.png" alt=""> <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Colleges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onClickNavigate('/top-exam')">Exam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onClickNavigate('/find-jobs')">Find Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onClickNavigate('/request')">Request Appointment </a>
+                    </li>
+                </ul>
+                <div class="my-acc form-inline d-none d-lg-inline">
+                    <div class="wrapper" (click)="onClickActive()">
+                        <img src="assets/images/user.png" alt="">
+                        <span>Account</span>
+                    </div>
+                    <div class="acc-menu" [hidden]="active">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img class="grey" src="assets/images/user-1.png" alt="">
+                                    <img class="green" src="assets/images/user.png" alt="">
+                                    <span>My Profile</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="grey" src="assets/images/not.png" alt="">
+                                    <img class="green" src="assets/images/not-grn.png" alt="">
+                                    <span>Notification</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="grey" src="assets/images/logout.png" alt="">
+                                    <img class="green" src="assets/images/logout-grn.png" alt="">
+                                    <span>Logout</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-14.png" alt="">
+</div>
+<div class="pageHeading">
+    <div class="container">
+        <h1>Request</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Request</li>
+            </ol>
+        </nav>
+    </div>
+</div>
